@@ -1,9 +1,7 @@
 package seleniumBasics;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -68,18 +66,8 @@ public class EbayTestcase {
 		  xpath("//h3[text()='Clothing, Shoes & Jewelry']")).getText());
 		 
 
-		/*TC6 Select number 1 selling Electronics item and Print price
+		// TC6 Search masks
 			System.out.println("Test Case 6:");
-			driver.findElement(By.xpath("(//div[@class='p13n-sc-truncated'])[4]")).click(); ----why
-			Thread.sleep(3000);
-			driver.findElement(By.id("add-to-cart-button")).click();
-			Thread.sleep(2000);
-			driver.findElement(By.xpath("(//span[@class='nav-line-2'])[3]")).click();
-			System.out.println(driver.findElement(By.xpath("(//span[@class='a-size-medium sc-number-of-items'])[2]")).getText());
-			// System.out.println(driver.findElement(By.id("priceblock_dealprice")).getText());
-	*/
-			// TC7 Search masks
-			System.out.println("Test Case 7:");
 			driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Masks");
 			Thread.sleep(1000);
 			driver.findElement(By.id("twotabsearchtextbox")).sendKeys(Keys.ENTER);
