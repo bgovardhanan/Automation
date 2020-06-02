@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]">
   <test thread-count="5" name="Test(failed)">
-    <parameter name="url" value="www.reqres.in"/>
+    <parameter name="url" value="https://www.reqres.in"/>
     <classes>
       <class name="com.testngbasics.Websites">
         <methods>

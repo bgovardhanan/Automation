@@ -19,7 +19,7 @@ public class Websites {
 	@Parameters({"url"})
 	public void web(String url) throws InterruptedException {
 		driver = new InternetExplorerDriver();
-		driver.get("www.google.com");
+		driver.get("https://www.google.com");
 		Thread.sleep(4000);
 		driver.close();
 		driver.get(url);

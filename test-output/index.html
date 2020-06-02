@@ -104,7 +104,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testngbasics.Websites" hash-for-method="web(www.reqres.in)">web(www.reqres.in)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.testngbasics.Websites" hash-for-method="web(https://www.reqres.in)">web(https://www.reqres.in)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -127,16 +127,16 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="web(www.reqres.in)">
-                  </a> <!-- web(www.reqres.in) -->
+                  <a name="web(https://www.reqres.in)">
+                  </a> <!-- web(https://www.reqres.in) -->
                   <span class="method-name">web</span>
-                  <span class="parameters">(www.reqres.in)</span>
-                  <div class="stack-trace">org.openqa.selenium.InvalidArgumentException: Specified URL (www.google.com) is not valid.
+                  <span class="parameters">(https://www.reqres.in)</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: session abf01a30-6b50-449c-935a-cf618d12bae6 does not exist
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;LAPTOP-RMHL5JSC&apos;, ip: &apos;10.0.0.183&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_251&apos;
 Driver info: org.openqa.selenium.ie.InternetExplorerDriver
-Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:31689/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
-Session ID: 92464347-d163-4a36-b095-7a3ce296dacd
+Capabilities {acceptInsecureCerts: false, browserName: internet explorer, browserVersion: 11, javascriptEnabled: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), se:ieOptions: {browserAttachTimeout: 0, elementScrollBehavior: 0, enablePersistentHover: true, ie.browserCommandLineSwitches: , ie.edgechromium: false, ie.edgepath: , ie.ensureCleanSession: false, ie.fileUploadDialogTimeout: 3000, ie.forceCreateProcessApi: false, ignoreProtectedModeSettings: false, ignoreZoomSetting: false, initialBrowserUrl: http://localhost:45369/, nativeEvents: true, requireWindowFocus: false}, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: abf01a30-6b50-449c-935a-cf618d12bae6
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
 	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
@@ -144,7 +144,7 @@ Session ID: 92464347-d163-4a36-b095-7a3ce296dacd
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
 	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
-	at com.testngbasics.Websites.web(Websites.java:22)
+	at com.testngbasics.Websites.web(Websites.java:25)
 	at java.util.ArrayList.forEach(ArrayList.java:1257)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
@@ -163,7 +163,7 @@ Session ID: 92464347-d163-4a36-b095-7a3ce296dacd
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;www.reqres.in&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://www.reqres.in&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.testngbasics.Websites&quot;/&gt;
     &lt;/classes&gt;
@@ -209,12 +209,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'web')
 data.setCell(0, 2, 'com.testngbasics.Websites')
-data.setCell(0, 3, 7428);
+data.setCell(0, 3, 21305);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 7 seconds</span>
+              <span class="suite-total-time">Total running time: 21 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -248,12 +248,12 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">web(www.reqres.in)</span>
-                <span class="method-start">9 ms</span>
+                <span class="method-name">web(https://www.reqres.in)</span>
+                <span class="method-start">15 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">7452 ms</span>
+                <span class="method-start">21335 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
